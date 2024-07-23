@@ -99,7 +99,7 @@ public class MachineServiceTest {
      */
     @Test
     public void startWorking_bulldozers() {
-        List<Bulldozer> bulldozers = List.of(new Bulldozer());
+        List<Machine> bulldozers = List.of(new Bulldozer());
         machineService.startWorking(bulldozers);
     }
 
@@ -108,7 +108,7 @@ public class MachineServiceTest {
      */
     @Test
     public void startWorking_excavators() {
-        List<Excavator> excavators = List.of(new Excavator());
+        List<Machine> excavators = List.of(new Excavator());
         machineService.startWorking(excavators);
     }
 
@@ -117,7 +117,7 @@ public class MachineServiceTest {
      */
     @Test
     public void startWorking_trucks() {
-        List<Truck> trucks = List.of(new Truck());
+        List<Machine> trucks = List.of(new Truck());
         machineService.startWorking(trucks);
     }
 }
