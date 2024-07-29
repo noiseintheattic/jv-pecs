@@ -14,6 +14,11 @@ public class Bulldozer extends Machine {
         this.dozingWidth = dozingWidth;
     }
 
+    public Bulldozer(String name, String color, double dozingWidth) {
+        super(name, color);
+        this.dozingWidth = dozingWidth;
+    }
+
     @Override
     public void doWork() {
         System.out.println("Bulldozer started to work");
@@ -23,8 +28,8 @@ public class Bulldozer extends Machine {
         return dozingWidth;
     }
 
-    public Bulldozer setDozingWidth(int dozingWidth) {
+    public void setDozingWidth(double dozingWidth) {
         this.dozingWidth = dozingWidth;
-        return this;
+
     }
 }

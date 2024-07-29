@@ -14,6 +14,11 @@ public class Truck extends Machine {
         this.loadCapacity = loadCapacity;
     }
 
+    public Truck(String name, String color, double loadCapacity) {
+        super(name, color);
+        this.loadCapacity = loadCapacity;
+    }
+
     @Override
     public void doWork() {
         System.out.println("Truck started to work");
@@ -23,8 +28,7 @@ public class Truck extends Machine {
         return loadCapacity;
     }
 
-    public Truck setLoadCapacity(double loadCapacity) {
+    public void setLoadCapacity(double loadCapacity) {
         this.loadCapacity = loadCapacity;
-        return this;
     }
 }
